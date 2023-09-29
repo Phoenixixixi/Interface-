@@ -1,0 +1,15 @@
+// C++ code
+//
+int led = 10;
+void setup()
+{
+  pinMode(led, OUTPUT); // pinmode untuk menentukan pin yang ditulis diparameter ingin dijadiikan input atau output
+}
+
+void loop()
+{
+  digitalWrite(led, HIGH); // digital write digunakan untuk menentukan aksi yang dilakukan oleh output disini aksinya HIGH
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(led, LOW); // digital write digunakan untuk menentukan aksi yang dilakukan oleh output disini aksinya LOW
+  delay(1000); // Wait for 1000 millisecond(s)
+}
