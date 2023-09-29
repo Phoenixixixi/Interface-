@@ -41,6 +41,10 @@ void setup(){
   pinMode(led3, OUTPUT);
 }
 
+//Perulangan setiap led dimana led diulang ulang untuk meredupkan dan menyala secara bertahap
+//perbedaan antara analogWrite dan digitalWrite adalah analog nilainya bisa diatur 0-255  dimana 255 aaalah hasil dari 8 bit dimana 2pangkat 8 adalah 256 dan nilainya adalh 0 - 255
+//sedangkan digitalWrite hanya terdapat dua opsi yaitu LOW dan HIGH saja
+
 void loop(){
   for(i1 = 0; i1 <=255; i1+=25){
    analogWrite(led1, i1);
