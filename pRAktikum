@@ -1,0 +1,23 @@
+//nilai max potentio = 1024
+// led 255
+// 1024/4
+int led1=9;
+int led2=10;
+int led3=11;
+int pot = A0;
+int i;
+int data;
+void setup(){
+pinMode(led1,OUTPUT);
+pinMode(led2,OUTPUT);
+pinMode(led3,OUTPUT);
+pinMode(pot,INPUT);
+
+} void loop(){
+  data = analogRead(pot);
+  data = data/4;
+  analogWrite(led1, data);
+  analogWrite(led2, data);
+  analogWrite(led3, data);
+  delay(500);
+}
